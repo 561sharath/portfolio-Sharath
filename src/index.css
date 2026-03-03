@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0f0f0f;
+  --color-section: #161616;
+  --color-accent: #facc15;
+  --font-content: "Poppins", sans-serif;
+}
+
+:root {
+  font-family: "Poppins", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0f0f0f;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+
+@layer base {
+  * {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  .glow-accent {
+    box-shadow: 0 0 15px rgba(250, 204, 21, 0.3);
+  }
+  
+  .glow-accent-hover:hover {
+    box-shadow: 0 0 25px rgba(250, 204, 21, 0.5);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
+  }
+}
