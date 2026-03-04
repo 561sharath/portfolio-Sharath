@@ -44,15 +44,15 @@ const About = () => {
                         </div>
                         <div className="p-8 bg-background border border-gray-800 rounded-2xl hover:border-accent/50 transition-all hover:bg-black group">
                             <h3 className="text-4xl font-bold text-accent mb-2 group-hover:scale-110 transition-transform origin-left">15+</h3>
-                            <p className="text-gray-400 font-medium">Modules Optimized</p>
+                            <p className="text-gray-400 font-medium">Modules Developed</p>
                         </div>
                         <div className="p-8 bg-background border border-gray-800 rounded-2xl hover:border-accent/50 transition-all hover:bg-black group">
                             <h3 className="text-4xl font-bold text-accent mb-2 group-hover:scale-110 transition-transform origin-left">40%</h3>
-                            <p className="text-gray-400 font-medium">Build Speed Improved</p>
+                            <p className="text-gray-400 font-medium">Build Performance Improved</p>
                         </div>
                         <div className="p-8 bg-background border border-gray-800 rounded-2xl hover:border-accent/50 transition-all hover:bg-black group">
                             <h3 className="text-4xl font-bold text-accent mb-2 group-hover:scale-110 transition-transform origin-left">10+</h3>
-                            <p className="text-gray-400 font-medium">Reusable Components</p>
+                            <p className="text-gray-400 font-medium">Reusable Components Built</p>
                         </div>
                     </motion.div>
                 </div>

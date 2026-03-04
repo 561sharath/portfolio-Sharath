@@ -12,7 +12,6 @@ const Hero = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <span className="text-accent font-semibold tracking-widest uppercase mb-4 block">Welcome to my portfolio</span>
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                         I'm <span className="text-accent decoration-yellow-500/30 underline-offset-8">{profileData.name}</span>
                     </h1>

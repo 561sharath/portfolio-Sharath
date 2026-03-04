@@ -1,19 +1,19 @@
 export const educationData = [
     {
         degree: "B.Tech in Computer Science and Engineering",
-        institution: "Your University Name",
-        period: "2020 - 2024",
+        institution: "BIT Institute of Technology, Hindupur",
+        period: "2019 - 2023",
         highlights: [
             "Relevant Coursework: Data Structures, Web Development, Databases",
-            "GPA: Keep as per your resume"
+            "CGPA: 7.11"
         ]
     },
     {
-        degree: "Higher Secondary Education",
-        institution: "Your School Name",
-        period: "2018 - 2020",
+        degree: "Intermediate",
+        institution: "Vidhyanidhi Junior College, Hindupur",
+        period: "2017 - 2019",
         highlights: [
-            "Specialization in Computer Science"
+            "Specialization in Mathematics, Physics, Chemistry"
         ]
     }
 ];
