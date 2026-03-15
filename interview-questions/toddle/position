@@ -1,0 +1,63 @@
+Parent: position: relative
+Child: position: absolute
+Behavior
+
+When a child element has position: absolute, it positions itself relative to the nearest positioned ancestor.
+
+A positioned ancestor means any parent with:
+
+position: relative
+position: absolute
+position: fixed
+position: sticky
+
+Since the parent has position: relative, the child will use that parent as its reference point.
+
+Example
+<div class="parent">
+  <div class="child"></div>
+</div>
+.parent {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: lightblue;
+}
+
+.child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: red;
+}
+Result
+
+The child div will appear at the top-right corner of the parent div, not the page.
+
+Visual Explanation
+Parent (relative)
+┌────────────────────┐
+│                    │
+│                    │
+│              ■     │  <- child (absolute)
+│                    │
+│                    │
+└────────────────────┘
+
+The child is positioned inside the parent box.
+
+What if parent was NOT relative?
+
+If the parent had:
+
+position: static (default)
+
+Then the child (absolute) would position itself relative to the viewport or nearest positioned ancestor above it.
+
+So it might go to the top-right of the page instead of the parent.
+
+Interview One-Line Answer
+
+If a parent has position: relative and the child has position: absolute, the child element is positioned relative to the parent container instead of the viewport. The parent acts as the reference point for the child's top, left, right, and bottom values.

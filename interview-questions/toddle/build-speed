@@ -1,0 +1,11 @@
+When we migrated from Webpack to Vite, we compared the build and development startup times before and after the migration.
+
+For Webpack, the development server startup and hot reload times were relatively slower because Webpack bundles the entire application before serving it.
+
+After migrating to Vite, we measured the performance in two ways. First, we observed the development server startup time, which reduced significantly because Vite uses native ES modules and serves files on demand instead of bundling everything initially. Second, we measured the production build time using the build command and compared the time taken before and after migration.
+
+We also monitored Hot Module Replacement (HMR) speed during development, which became almost instant after the migration.
+
+By comparing these metrics, we saw that the development startup time and build time improved significantly, roughly around 40% faster compared to Webpack.
+
+Hot Module Replacement is a feature that allows modules (components, CSS, JS) to be updated in the browser instantly without reloading the entire page during development.

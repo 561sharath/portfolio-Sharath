@@ -1,0 +1,23 @@
+To identify unnecessary re-renders, I used React DevTools Profiler and browser developer tools.
+
+First, I opened the React DevTools Profiler and recorded interactions while using the application. This helped me see which components were re-rendering frequently and how long each render was taking.
+
+I also used techniques like console logging inside components to quickly confirm when a component was re-rendering during development.
+
+After identifying unnecessary renders, I optimized them by:
+
+Using React.memo to prevent re-rendering when props didn’t change
+
+Memoizing functions with useCallback
+
+Memoizing computed values with useMemo
+
+Avoiding unnecessary state updates
+
+Splitting large components into smaller components
+
+After applying these optimizations, I verified the improvements again using the React Profiler, which showed fewer renders and better rendering time.
+
+Shorter Version (if they interrupt)
+
+I usually detect unnecessary re-renders using React DevTools Profiler. It shows which components re-render and how long they take. I confirm it during development using console logs, and then optimize using React.memo, useMemo, useCallback, and better state management.
